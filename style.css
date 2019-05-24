@@ -1,135 +1,374 @@
+html{
+    scroll-behavior: smooth;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: #c4c4c4;
+}
 
-.header {
-    margin-top: -8px;
+marquee {
+    margin-top: 0px;
     padding: 1px;
     text-align: right;
     background: #ed484c;
     color: white;
     font-size: 16px;
     font-style: bold;
-    font-family: 'Roboto Condensed', sans-serif;
 }
-
-
-#logo img {
-    height: 35px;
-    padding-left: 40px;
-    margin-top: -10px;
-    color: black;
+.nav ul{
+    display:flex;
+    
 }
-
-
-.nav ul {
-    list-style-type: none;
-    margin: 1px;
-    padding: 1px;
-    overflow: hidden;
-    background-color: #4c4c4c;
-    font-family: 'Roboto Condensed', sans-serif;
+.nav li{
+    padding:10px 13px;
+    list-style-type:none;
+    font-size:bold;
 }
-
-.nav li {
-    float: right;
-}
-
-.nav li a {
-    display: block;
-    color: #cacaca;
-    text-align: center;
-    padding: 20px 20px;
-    font-size: 15px;
+.nav li a{
     text-decoration: none;
-} 
-
-#about {
-    width: 100%;
-    height: 300px;
-    background-color: #f18d97;
-    background-image: url('mockups-may-14-master\floral.png');
-    background-repeat: repeat;
-    background-size: 300px 100%;
-    background-position: center; 
-    margin-top: -21px;
+    color: #cacaca;
 }
-
-h1,p{
-    text-align: center;
-    padding-top: 49px;
-}
-
-.signup {
-    padding: 1em 4em;
-    background-color: #170d0e;
-    color: #f18d97;
-    border: none;
-    font-size: 26px;
-    margin-bottom: 20px;
-}
-
-.signup:hover {
-    background-color: white;
-    color: black;
+.nav li:hover{
+    color: white;
     font-weight: bold;
 }
 
-.box-container {
-    background: url('mockups-may-14-master\floral.png');
-    background-color: #efece7;
+body{
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-.service-container {
+
+.join {
+    padding:1em;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: #f08d97 url("images/floral.png") repeat-y;
+}
+.join h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:900;
+    padding:0px 20px;
+    text-align:center;
+}
+.join p {
+    font-weight:bold;
+    border-top:1px solid;
+    border-bottom:1px solid;
+    padding: 20px;
+    text-align:center;
+    
+}
+.join button {
+    background-color: black;
+    border:none;
+    color:#f18d97;
+    font-weight:bold;
+    font-size:large;
+    padding:10px 50px;
+    letter-spacing:2px;
+}
+.services {
+    padding: 1em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background: #efece7 url("images/floral.png") repeat-y;
+}
+.services h2 {
+    font-family: 'Sofia', cursive;
+    font-size:2em;
+}
+.services p {
+    padding: 10px;
     text-align: center;
+    margin-top:0;
+}
+.services figure{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.services i {
+    font-size:6em;
 }
 
-.box-description h2 {
+.services h1 {
+    font-weight:900;
+    font-size: 1em;
+    margin-bottom: 0;
     text-align: center;
+}
+.portfolio {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ddceb4 url("images/floral.png") repeat-y;
+}
+
+.portfolio h2 {
+    font-family: 'Sofia', cursive;
     font-size: 2em;
-    margin: 50px 0;
 }
-
-i.fab.fa-html5 {
-    font-size: 150px;
+.portfolio p {
+    font-weight:bold;
+    border-top:1px solid;
+    border-bottom:1px solid;
+    padding: 20px;
+    text-align:center;
 }
-
-i.fab.fa-html5:hover {
-    color:white;
+.projects {
+    padding: 20px;
+    text-align:center;
+    flex-wrap: wrap;
+    display: flex;
 }
-
-i.fab.fa-css3 {
-    font-size: 150px;
+.portfolio figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000bd;
+    border-radius: 15px;
+    opacity: 0;
 }
-
-i.fab.fa-css3:hover {
+.portfolio figure{
+    border-radius: 15px;
+    width: 100%;
+    margin: 10px;
+    height: 145px;
+    background-size: cover;
+}
+#view-opt{
+    display: flex;
+}
+.portfolio figure#zunaishhijab{
+    background-image: url("images/p-1.png");
+    
+}
+.portfolio figure#reachout{
+    background-image: url("images/p-2.png");
+}
+.portfolio figure#olx{
+    background-image: url("images/p-3.png");
+    
+}
+.portfolio figure#shoes{
+    background-image: url("images/p-4.png");
+    
+}
+.portfolio figure#tv{
+    background-image: url("images/p-5.png");
+    
+}
+.portfolio figure#shoestore{
+    background-image: url("images/p-6.png");
+    
+}
+.projects figcaption i{
+    border:1px solid white;
+    border-radius:50%;
+    padding:8px;
+    margin: 5px;
+    margin-bottom:20px;
     color: white;
 }
-
-i.fab.fa-js {
-    font-size: 150px;
-}
-
-i.fab.fa-js:hover {
+.projects figcaption h3 {
+    margin-bottom:8px;
     color: white;
 }
-
-.service-description {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 18px;
+.contact {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #afc7c6 url("images/floral.png") repeat-y;
 }
-
-
-
-.regards-info {
-    background-color: #212121;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-weight: 100px;
+.contact h1 {
+    font-family: 'Sofia', cursive;  
 }
-
-.regards-info:hover .fa-heart{
-    color: red;
+.social i {
+    font-size:2em;
+    border: 1px solid black;
+    padding:10px;
+    border-radius: 100px;
 }
+@media screen and (min-width:620px) and (max-width:960px) {
+    
+
+    #nav img {
+        width: 5em;
+        height: 3em;
+        padding: 1.5em;
+        margin:0px;
+    }
+
+    #nav ul li {
+        list-style-type: none;
+        padding: 1.5em;
+        color: #c4c4c4;
+        font-size:1.2em;
+        font-weight: bold;
+    }
+
+    .join h1 {
+        padding: 0;
+        font-size: 4em;
+
+    }
+
+    .join p {
+        font-weight:100;
+        padding:20px 0px;
+        font-size: 28px;
+    }
+
+    .join button {
+        font-size:2em;
+        padding:20px 80px;
+        }
+
+    .services figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 90px;
+        font-size:1.5em;
+    }
+    .portfolio {
+        padding: 2em;
+    }
+    .portfolio h2 {
+        font-size: 2.5em;
+    }
+    .portfolio figcaption{
+        opacity: 0;
+    }
+    .portfolio p {
+        font-size: 1.5em;
+        padding: 30px;
+    }
+    .portfolio figure{
+        width: 45%;
+    }
+    .projects {
+        justify-content: center;
+    }
+    .contact h1 {
+        font-size: 2.5em;
+    }
+    .contact i {
+        font-size: 4em;
+        margin: 10px;
+        padding: 0.3em;
+    }
+    } 
+@media screen and (min-width:961px) {
+    #nav img {
+    width: 5em;
+    height: 3em;
+}
+#nav ul li {
+    list-style-type: none;
+    padding: 1.5em;
+    font-size: 1.2em;
+}
+    .join h1 {
+        font-size: 3em;
+    }
+    .join p {
+        width:70%;
+    }
+    .join button {
+        font-size: 1.8em;
+        font-weight:normal;
+    }
+    .services #courses {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .services figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    font-size:0.8em;
+    }
+    .services i {
+        font-size:120px;
+    }
+    .portfolio p {
+        width: 55%;
+        padding: 20px 50px;
+    }
+    .portfolio figure{
+        width: 30%
+    }
+    .portfolio figcaption{
+        opacity: 0;
+    }
+        
+    .contact i {
+    font-size: 2em;
+    margin: 8px;
+    padding: 0.4em;
+    border-radius:50%;
+    }
+}
+    
+
+    /*hovers*/
+
+    .contact i:hover {
+        color: #f3dbf1;
+        background-color: black;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    footer:hover span {
+        color: red;
+        transition: 0.5s;
+    
+    }
+    .portfolio figure:hover figcaption{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .join button:hover{
+        cursor: pointer;
+        background-color: black;
+        transition: 0.5s;
+        box-shadow: 0px 0px 5px white;
+        color: white;
+    }
+    .services figure:hover i {
+        color: #ed484d;
+        transition: 0.5s;
+
+    }
+    #view-opt i:hover{
+        color: black;
+        background-color: white;
+        transition: 0.5s;
+    }

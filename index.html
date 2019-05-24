@@ -2,120 +2,160 @@
 <html lang="en">
 
 <head>
-    <title>Document</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Grand+Hotel|Italianno|Josefin+Sans:400,600,600i,700,700i|Nunito:400,600i,700,700i,800,800i,900,900i|Sofia"
+        rel="stylesheet">
 
+    <title>Tech Karo Page</title>
 </head>
 
 <body>
     <header>
-
-        <div class="header">
-            <marquee>Special Offer, jjust for Pakistani citizens! Get <mark>50%discount</mark>on anything</marquee>
-        </div>
-
-
-
-        <header>
-            <div id="logo">
-                <img src="mockups-may-14-master\logo.png">
-            </div>
-
-
+        <marquee>
+            Special Offer, just for Pakistani citizens! Get <mark>50% discount</mark> on any service they choose.
+        </marquee>
+        <div id="nav">
+            <img src="images/logo.png" alt="logo">
             <div class="nav">
 
-                <ul>
-                    <li><a class="active" href="#contact"> Contact </a></li>
-                    <li><a class="active" href="#portfolio"> Portfolio </a></li>
-                    <li><a class="active" href="#service"> Service </a></li>
-                </ul>
-
-        </header>
-
-
-        <main>
-            <div id="about">
-
-                <h1>Tech Karo, CIRCLE</h1>
-                <p>We are Tech Karo students and we work hard! we self-learn and NEVER <br> give up! Join our team,
-                    because Tech is the future!</p>
-                <button class="signup"> Join Now!</button>
-            </div>
-
-
-
-
-            <div class="box-container">
-                <div class="box-description">
-                    <h2>Our Services</h2>
+                    <ul>
+                        <li><a class="active" href="#contact"> Contact </a></li>
+                        <li><a class="active" href="#portfolio"> Portfolio </a></li>
+                        <li><a class="active" href="#service"> Service </a></li>
+                    </ul>
                 </div>
-
-
-                <div class="service-container">
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-
-                        <div class="service-description">
-                            <h4> HTML</h4>
-                        </div>
-                        <div class="article">
-
-                            <div class="article">
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-box ">
-                            <div class="service-icon">
-                                <i class="fab fa-css3"></i>
-                            </div>
-        
-                            <div class="service-description">
-                                <h4> CSS</h4>
-                            </div>
-                            <div class="article">
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-        
-        
-                        <div class="service-box">
-                            <div class="service-icon">
-                                <i class="fab fa-js"></i>
-        
-                            </div>
-        
-                            <div class="service-description">
-                                <h4> JS</h4>
-                            </div>
-                            <div class="article" <div class="article">
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                    </div>
-        
-        
-                </div>
-
-
-        </main>
-
-        <footer>
-            <div class="regards-info">
-                <p> made width <i class="fas fa-heart"></i> by Fahmeen Firdausi</p>
-            </div>
-        </footer>
-
         </div>
     </header>
+
+    <main>
+        <section class="join">
+            <h1>Tech Karo, CIRCLE</h1>
+            <p>We are Tech Karo students, and we work hard! We self-learn and NEVER give up! Join our team, because
+                Tech is the future!</p>
+            <button>Join Now!</button>
+        </section>
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <div id="courses">
+                <figure>
+                    <i class="fab fa-html5"></i>
+                    <figcaption>
+                        <h1>HTML</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, optio vitae. Incidunt
+                            ad possimus delectus voluptas, optio et, vitae, laudantium illum eos qui error!
+                            Accusamus hic libero
+                            sapiente dolores officiis.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <i class="fab fa-css3"></i>
+                    <figcaption>
+                        <h1>CSS</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, optio vitae. Incidunt
+                            ad possimus delectus voluptas, optio et, vitae, laudantium illum eos qui error!
+                            Accusamus hic libero
+                            sapiente dolores officiis.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <i class="fab fa-js"></i>
+                    <figcaption>
+                        <h1>JS</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, optio vitae. Incidunt
+                            ad possimus delectus voluptas, optio et, vitae, laudantium illum eos qui error!
+                            Accusamus hic libero
+                            sapiente dolores officiis.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Our students have been working really hard! Here are some of their projects</p>
+            <div class="projects">
+                <figure id="zunaishhijab">
+                    <figcaption>
+                        <h3>Zunaish Hijab</h3>
+                        <div id="view-opt">
+                            <i class="far fa-eye"></i>
+                            <i class="far fa-thumbs-up"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure id="reachout">
+                    <figcaption>
+                        <h3>Reach out</h3>
+                        <div id="view-opt">
+                            <i class="far fa-eye"></i>
+                            <i class="far fa-thumbs-up"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure id="olx">
+                    <figcaption>
+                        <h3>OLX</h3>
+                        <div id="view-opt">
+                            <i class="far fa-eye"></i>
+                            <i class="far fa-thumbs-up"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure id="shoes">
+                    <figcaption>
+                        <h3>Shoes</h3>
+                        <div id="view-opt">
+                            <i class="far fa-eye"></i>
+                            <i class="far fa-thumbs-up"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure id="tv">
+                    <figcaption>
+                        <h3>TV+</h3>
+                        <div id="view-opt">
+                            <i class="far fa-eye"></i>
+                            <i class="far fa-thumbs-up"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure id="shoestore">
+                    <figcaption>
+                            <h3>Shoe Store</h3>
+                            <div id="view-opt">
+                                <i class="far fa-eye"></i>
+                                <i class="far fa-thumbs-up"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <div class="contact" id="contact">
+            <h1>Contact Us</h1>
+            <div class="social">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-square"></i>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Made with <span><i class="fas fa-heart"></i></span>by Fahmeen Firdausi</p>
+    </footer>
 </body>
 
 </html>
